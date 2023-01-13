@@ -52,16 +52,31 @@ line-height: 110%;
 color: #222222;
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card{
   width: 175px;
   font-size: 12px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
 }
 
-.card-image{
+.card-img{
   width: 100%;
   border-radius: 9px;
+  margin-bottom: 9px;
 }
 
+.card-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .card-stats{
   display: flex;
   align-items: center;
@@ -69,4 +84,8 @@ color: #222222;
 
 .card-star{
   height: 14px;
+}
+
+.card-price{
+  margin-top: auto;
 }
